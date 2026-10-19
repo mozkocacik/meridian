@@ -1,0 +1,54 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Meridian</title>
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--surface); color: var(--ink); font-family: var(--font-sans); overflow: hidden; }
+  .cover { position: relative; width: 960px; height: 288px; overflow: hidden; }
+  .art { position: absolute; top: 0; left: 480px; width: 480px; height: 288px; overflow: hidden; }
+  .art svg { display: block; width: 480px; height: 288px; }
+  .accent { fill: var(--accent); }
+  .globe { fill: var(--accent-soft); }
+  .meridian { fill: none; stroke: var(--accent-text); stroke-width: 1.5; }
+  .ok { fill: var(--success-soft); }
+  .okdot { fill: var(--success); }
+  .words { position: absolute; left: var(--space-8); bottom: var(--space-8); max-width: 440px; }
+  .name { margin: 0; font-size: 88px; line-height: .92; font-weight: 600; letter-spacing: -0.03em; color: var(--ink); }
+  .tag { margin: var(--space-3) 0 0 4px; font-size: 14px; line-height: 20px; color: var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      accent-soft half-globe r=240 rising from the bottom edge and bled off the right · accent slab 96x144 bled off the top (the one hue, as the primary button) · success-soft pill 80x32 (status stays small) ≈ 34% of 960x288
+  arrangement one calm dome with one small slab and one pill beside it; lots of ground left, as the pages leave white space
+  pattern     literal motif, the system's name: six meridians, the outer one the limb that draws the globe on the light ground (accent-text, 1.5px) cut into the globe, the system's one accent used as a line, never more lines than a page has sections
+  scales      slab radius-2xl (16); pill radius-full as half its 32px height; gaps space-4 (16) and space-8 (32); meridian step 60 = space-14 + space-1
+-->
+<defs><clipPath id="globe"><circle cx="352" cy="288" r="240"/></clipPath></defs>
+<circle class="globe" cx="352" cy="288" r="240"/>
+<g clip-path="url(#globe)">
+<ellipse class="meridian" cx="352" cy="288" rx="180" ry="240"/>
+<ellipse class="meridian" cx="352" cy="288" rx="120" ry="240"/>
+<ellipse class="meridian" cx="352" cy="288" rx="60" ry="240"/>
+<line class="meridian" x1="352" y1="48" x2="352" y2="288"/>
+<line class="meridian" x1="112" y1="208" x2="592" y2="208"/>
+</g>
+<circle class="meridian" cx="352" cy="288" r="239.25"/>
+<rect class="accent" x="16" y="-16" width="96" height="144" rx="16"/>
+<rect class="ok" x="16" y="152" width="80" height="32" rx="16"/>
+<circle class="okdot" cx="36" cy="168" r="4"/>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">Meridian</h1>
+<p class="tag">Calm, light pages for the product story.</p>
+</div>
+</div>
+</body>
+</html>
