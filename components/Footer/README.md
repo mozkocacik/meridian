@@ -1,8 +1,7 @@
 # Footer
 
-The page's last row. Two forms:
+The only dark band on a page besides the cover. `band` fill in both themes. Four link columns (Products, Support, Resources, Company), then a base row with the region and language selector left and the legal line right.
 
-- **Simple** (default): a line border, the copyright on the left and up to four links on the right, 14px ink-muted.
-- **Columns**: pass `columns` and the footer adds a top part: the logo and a one-line `tagline` on the left, then three or four link columns (14px 600 ink heading, 15px ink-muted links). The copyright and legal links sit below a line. Use it on sites with more than one page.
+Links in `band-text-2`, hover `band-text`. Column titles 13px 600.
 
-**Content:** the copyright and the legal links (Terms, Privacy). The column version also has the brand, a tagline and the link columns (title and links).
+**Content:** link columns, region and language, legal entity line.

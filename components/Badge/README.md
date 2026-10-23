@@ -1,15 +1,13 @@
 # Badge
 
-A pill (radius-full) with a pale tint that shows a status or a short label.
+Shows the lifecycle state of a product. Every product shows one.
 
-| tone | background | label | use for |
-|---|---|---|---|
-| success | success-soft | success | Approved, Active, Paid |
-| warning | warning-soft | warning | In review, Pending |
-| danger | danger-soft | danger | Rejected, Overdue, Failed |
-| neutral | neutral-soft | ink-secondary | Draft, Archived |
-| accent | accent-soft | accent-text | New, Most popular, Save 20% |
+- **Preview** (`info`): samples only, not for production orders.
+- **Active** (`success`): in production.
+- **NRND** (`warning`): not recommended for new designs. Name a replacement.
+- **End of life** (`danger`): no new orders. Name the replacement and the last delivery date.
+- **neutral** (`text-2` on `muted`): other states, for example Custom.
 
-Every label is 4.5:1 or more on its tint in both themes. The word carries the meaning; never rely on the color alone.
+A dot and a text label. The color is never the only signal. Height 22px, radius `r-1`, 12px 600.
 
-Content: one to three words. Sentence case. Do not put icons or numbers above 99 in a badge. Size `lg` is for the announcement pill only.
+**Content:** the state, in the words above.

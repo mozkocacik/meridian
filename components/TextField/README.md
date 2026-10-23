@@ -1,11 +1,7 @@
 # TextField
 
-A labelled text input: label above, the field, then a hint or an error.
+Label above, input 40px, radius `r-2`, 1px `border-strong`. Focus: 2px `accent` ring. Units sit inside the field on the right in `data` (`text-3`).
 
-- Field: `field-h` (44px), radius-md, `line-input` border (3:1 or more), surface fill, shadow-xs, 16px ink text. Placeholder is `ink-placeholder`.
-- Label: 14px 500 in ink-secondary. Mark optional fields with "(optional)", not required ones with a star.
-- Hint: `body-sm` in ink-muted. Show it only when it answers a real question ("We send the receipt here").
-- Error: replaces the hint, `danger` text with the alert icon, and the border turns `danger`. Say what to do: "Enter an email address like name@company.com."
-- Focus: the border turns accent-text and the standard focus ring shows.
+Help text (13px `text-3`) only when it answers a real question. An error replaces the help text, turns the border `danger` and says what is wrong and how to correct it. Never use a placeholder as a label.
 
-**Content:** a label (always, also when it is visually hidden), the type, a placeholder, a hint and an error. Never use the placeholder as the label.
+**Content:** label, optional unit, optional help, error text.

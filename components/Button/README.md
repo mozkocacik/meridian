@@ -1,12 +1,14 @@
 # Button
 
-Buttons start an action or go to a page. There are three variants on light surfaces and one for the dark call-to-action block.
+Buttons start an action or go to a page.
 
-- **primary**: accent fill, on-accent label, shadow-xs. One per group. It is the thing the page wants ("Start for free", "Get started").
-- **secondary**: outlined with line-control, ink-secondary label. The other choice beside a primary ("Watch demo"). An optional icon sits before the label.
-- **tertiary**: text only. Use in the nav for "Log in".
-- **inverse**: outlined on inverse-surface, inside CtaBlock only ("Talk to sales").
+- **primary:** graphite fill (`inverse`), `on-inverse` label. One per view: "Request quote".
+- **secondary:** `canvas` fill, 1px `border-strong` ring. Parallel actions: "Datasheet".
+- **tertiary:** text only, `muted` on hover. Low-priority actions in dense areas: "Compare".
+- **danger:** `danger` fill. Destructive actions in account areas only.
 
-Sizes: `md` (15px, 10/18 padding) in the nav; `lg` (16px, 14/22 padding) in the hero and the call-to-action block. Radius is radius-md (8px).
+The accent is never a button fill. Sizes: `s` 32px (toolbars, tables), `m` 40px (default), `l` 48px (product header). Radius `r-2`. Weight 560.
 
-**Content:** the label (sentence case, verb first). A button that goes to another page is a link (`<a>`). Do not use more than two buttons in a group. Put the secondary first and the primary last.
+States: hover, pressed, focus (2px `accent` ring, 2px offset), disabled (`muted` fill, `text-3` label), loading (spinner and a present-tense label: "Sending").
+
+**Content:** a verb that names the result, sentence case. A button that goes to another page is a link (`<a>`).

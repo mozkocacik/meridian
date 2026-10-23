@@ -1,7 +1,7 @@
 # DataTable
 
-A simple table for the product mock: header row on surface-soft, 14px rows, line separators, radius-xl outer frame.
+Rows of products or records with the same fields. 14px text, 11/16px cell padding, `subtle` header row in 12px 600 `text-2`. Row hover is `subtle`. Radius `r-3`, 1px `border`.
 
-The first column is ink 500. Other columns are ink-muted. A `status` cell takes `{tone, label}` and renders a Badge.
+Numbers align right with tabular figures. Part numbers use `data`. Lifecycle uses a Badge. The last column can hold one text link ("Quote"). Put the table in a container that scrolls sideways on small screens.
 
-**Content:** the columns (label, optional width), the rows and a caption for screen readers. This table is for marketing mocks, not for real data apps.
+**Content:** a caption (can be hidden), column names and rows.

@@ -1,11 +1,12 @@
 # Meridian
 
-Meridian is a calm, light design system for marketing sites and product landing pages. It has a light and a dark theme, one accent color that each product sets, Geist and Geist Mono, and Lucide icons.
+Meridian is the design language for the public site of an electronics company: product catalog, product pages, documentation, support and company pages. It treats specifications as the main content. It has a light and a dark theme, one accent color that each company sets, Instrument Sans and JetBrains Mono, and Lucide icons.
 
 | System | For |
 | --- | --- |
 | Solaris | Dense management and collaboration apps |
-| **Meridian** | Marketing and landing pages |
+| **Meridian** | Company sites for growing electronics companies |
+| Azimuth | Corporate sites for established electronics manufacturers |
 | Vesper | Developer and infrastructure tools |
 
 Meridian is a reference, not a component library. Each component is a definition (`README.md`) and a static HTML picture (`preview.html`). There is no JavaScript. Build the components in your own stack.
@@ -15,7 +16,7 @@ Meridian is a reference, not a component library. Each component is a definition
 | Path | Content |
 | --- | --- |
 | `README.md` | This page. |
-| `GUIDELINES.md` | Rules for color, type, layout, content and accessibility. Read it before you build a screen. |
+| `GUIDELINES.md` | Rules for principles, color, type, layout, content and accessibility. Read it before you build a page. |
 | `tokens.json` | All tokens with a usage note for each token. |
 | `tokens.css` | The same tokens as CSS custom properties and type classes. When you change a token, change both files. |
 | `components/bundle.css` | Styles for the previews. It uses only the custom properties from `tokens.css`. |
@@ -26,17 +27,17 @@ Meridian is a reference, not a component library. Each component is a definition
 
 The repository does not contain font or icon files. Get them from their own sources:
 
-- **Fonts:** Geist and Geist Mono (Google Fonts). `components/bundle.css` loads them.
+- **Fonts:** Instrument Sans and JetBrains Mono (Google Fonts). `components/bundle.css` loads them.
 - **Icons:** Lucide (lucide.dev). Use the Lucide icon names.
 
 ## Theme
 
 ```html
-<html data-theme="light" data-accent="teal"> <!-- accent: violet, teal, orange or ink -->
+<html data-theme="light" data-accent="copper"> <!-- accent: copper, cobalt, teal or graphite -->
 ```
 
-The accent sets `--accent`, `--accent-text`, `--accent-soft` and `--on-accent` together. Do not set `--accent` alone. Component classes use the prefix `md-`.
+With no `data-theme`, Meridian follows the system setting. The accent sets `--accent`, `--accent-hover`, `--accent-subtle` and `--on-accent` together. Do not set `--accent` alone. Component classes use the prefix `md-`.
 
 ## Components
 
-AccentOptions, AnnouncementPill, Badge, Button, ChangelogEntry, Cover, CtaBlock, DataTable, EmailCapture, FaqList, FeatureGrid, FeatureItem, Footer, Hero, Icon, LandingPage, Logo, NavBar, PricingCard, PricingPage, PricingTable, ProductFrame, SectionHeader, SegmentedControl, StatCard, Testimonial, TextField, TextLink
+AccentOptions, Accessory, Annotation, Badge, Breadcrumb, Button, Checkbox, Cover, DataTable, DocumentList, FeatureList, Footer, Icon, KeyFigures, KeyValueGrid, Logo, MegaMenu, NavBar, Notice, PartNumber, ProductFinder, ProductHeader, ProductPage, SectionBar, SectionHeader, SegmentedControl, SpecTable, Tabs, Tag, TextField, TextLink, ThemeToggle
