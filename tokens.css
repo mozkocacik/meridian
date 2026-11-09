@@ -1,0 +1,233 @@
+/* Meridian tokens. Generated from tokens.json. When you change a token, change both files. */
+/* Light is the default theme. Put data-theme="dark" on the root to use the dark theme. */
+
+:root, [data-theme="light"] {
+  --slate-0: #ffffff;
+  --slate-25: #f6f7f9;
+  --slate-50: #edf0f3;
+  --slate-100: #e3e7ec;
+  --slate-200: #d9dee5;
+  --slate-300: #bcc4ce;
+  --slate-400: #a9b2be;
+  --slate-500: #6b7686;
+  --slate-600: #525c6b;
+  --slate-700: #3d4552;
+  --slate-800: #262b34;
+  --slate-900: #16191f;
+  --slate-950: #0e1116;
+  --copper-50: #f8e9df;
+  --copper-100: #f1d2be;
+  --copper-200: #e6ae8a;
+  --copper-300: #e58a55;
+  --copper-400: #cf6a30;
+  --copper-500: #a8501c;
+  --copper-600: #8c4116;
+  --copper-700: #6e3311;
+  --copper-800: #4e240c;
+  --copper-900: #2c1d14;
+  --canvas: var(--slate-0);
+  --subtle: var(--slate-25);
+  --muted: var(--slate-50);
+  --sunken: var(--slate-100);
+  --border: var(--slate-200);
+  --border-strong: var(--slate-400);
+  --text: var(--slate-900);
+  --text-2: var(--slate-600);
+  --text-3: var(--slate-500);
+  --inverse: #12151b;
+  --inverse-hover: var(--slate-800);
+  --inverse-pressed: #000000;
+  --on-inverse: #f4f6f8;
+  --accent: var(--copper-500);
+  --accent-hover: var(--copper-600);
+  --accent-subtle: var(--copper-50);
+  --on-accent: #ffffff;
+  --info: #1f5fbf;
+  --info-subtle: #e7effb;
+  --success: #1e7a47;
+  --success-subtle: #e5f3ea;
+  --warning: #8a5a00;
+  --warning-subtle: #fbf1d9;
+  --danger: #c1352b;
+  --danger-subtle: #fbe8e6;
+  --grid-line: rgba(22,25,31,0.055);
+  --draw-fill: var(--slate-25);
+  --draw-stroke: var(--slate-900);
+  --draw-line: var(--slate-400);
+  --draw-dim: var(--slate-500);
+  --band: #0b0d11;
+  --band-2: #14171d;
+  --band-line: #2a303a;
+  --band-text: #f4f6f8;
+  --band-text-2: #9aa5b4;
+  --shadow-2: 0 1px 2px rgba(16,19,24,0.06), 0 8px 24px rgba(16,19,24,0.10);
+  --shadow-3: 0 2px 4px rgba(16,19,24,0.08), 0 24px 56px rgba(16,19,24,0.18);
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --canvas: #0e1116;
+  --subtle: #13171d;
+  --muted: #1a1f27;
+  --sunken: #20262f;
+  --border: #2a313c;
+  --border-strong: #48515e;
+  --text: #e8ecf1;
+  --text-2: #9aa5b4;
+  --text-3: #7c8796;
+  --inverse: #e8ecf1;
+  --inverse-hover: #ffffff;
+  --inverse-pressed: #c9d0d9;
+  --on-inverse: #0e1116;
+  --accent: var(--copper-300);
+  --accent-hover: #f0a273;
+  --accent-subtle: var(--copper-900);
+  --on-accent: #0e1116;
+  --info: #6fa0f0;
+  --info-subtle: #142035;
+  --success: #4fbf80;
+  --success-subtle: #12261b;
+  --warning: #e0b04a;
+  --warning-subtle: #2a2210;
+  --danger: #f0756a;
+  --danger-subtle: #2e1614;
+  --grid-line: rgba(232,236,241,0.05);
+  --draw-fill: #161a21;
+  --draw-stroke: #e8ecf1;
+  --draw-line: #48515e;
+  --draw-dim: #7c8796;
+  --band: #0b0d11;
+  --band-2: #14171d;
+  --band-line: #2a303a;
+  --band-text: #f4f6f8;
+  --band-text-2: #9aa5b4;
+  --shadow-2: 0 1px 2px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.45);
+  --shadow-3: 0 2px 4px rgba(0,0,0,0.5), 0 24px 56px rgba(0,0,0,0.6);
+  color-scheme: dark;
+}
+
+:root {
+  --font-sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+  --r-1: 2px;
+  --r-2: 4px;
+  --r-3: 6px;
+  --r-4: 8px;
+  --t-fast: 120ms;
+  --t-base: 200ms;
+  --t-slow: 320ms;
+  --t-exit: 160ms;
+  --page: 1280px;
+  --control-s: 32px;
+  --control-m: 40px;
+  --control-l: 48px;
+  --header-h: 64px;
+  --icon-m: 20px;
+  --icon-l: 24px;
+}
+
+.display-xl {
+  font-family: var(--font-sans);
+  font-size: 64px;
+  line-height: 66px;
+  font-weight: 560;
+  letter-spacing: -0.028em;
+}
+
+.display-l {
+  font-family: var(--font-sans);
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 560;
+  letter-spacing: -0.024em;
+}
+
+.h1 {
+  font-family: var(--font-sans);
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 580;
+  letter-spacing: -0.018em;
+}
+
+.h2 {
+  font-family: var(--font-sans);
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 580;
+  letter-spacing: -0.012em;
+}
+
+.h3 {
+  font-family: var(--font-sans);
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: -0.006em;
+}
+
+.h4 {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+.body-l {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.body-s {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.caption {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.overline {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.data {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --t-fast: 0ms; --t-base: 0ms; --t-slow: 0ms; --t-exit: 0ms; }
+}

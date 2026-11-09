@@ -1,0 +1,17 @@
+<!-- @dsCard group="Forms" height=300 subtitle="Label above, unit inside, error under the field" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>TextField</title></head>
+<body class="md-doc">
+<div id="root">
+<div class="md-forms">
+<div class="md-field"><label for="f1">Company e-mail</label><input class="md-input" id="f1" type="email" placeholder="name@company.com"><span class="md-help">We send the quote to this address.</span></div>
+<div class="md-field"><label for="f2">Quantity</label><input class="md-input is-focus" id="f2" type="text" value="250"></div>
+<div class="md-field"><label for="f3">Part number</label><input class="md-input is-error" id="f3" type="text" value="GW-41O-4C" aria-invalid="true" aria-describedby="f3e"><span class="md-err" id="f3e"><svg class="md-i md-i-16" aria-hidden="true"><use href="#i-alert"/></svg>Use digits only in the part number. Example: GW-410-4C-LTE-E.</span></div>
+<div class="md-field"><label for="f5">Supply voltage, min.</label><div class="md-unit"><input class="md-input" id="f5" type="text" value="9"><span>V DC</span></div></div>
+<div class="md-field"><label for="f6">Serial number</label><input class="md-input" id="f6" type="text" value="Read from device" disabled></div>
+</div>
+</div>
+<script>Meridian.mount();</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- @dsCard group="Patterns" height=560 subtitle="Parametric search with facets, chips and compare" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>ProductFinder</title><style>.md-doc{padding:0}</style></head>
+<body class="md-doc">
+<div id="root">
+<div class="md-frame md-finder">
+<aside class="md-facets" aria-label="Filters">
+<div class="md-facet"><p class="md-overline">Interfaces</p><label class="md-check"><input type="checkbox" checked>CAN FD<span class="md-count">18</span></label><label class="md-check"><input type="checkbox">LIN<span class="md-count">11</span></label><label class="md-check"><input type="checkbox">Automotive Ethernet<span class="md-count">4</span></label><label class="md-check"><input type="checkbox">FlexRay<span class="md-count">2</span></label></div>
+<div class="md-facet"><p class="md-overline">Supply voltage</p><div class="md-range"><div class="md-unit"><input class="md-input" value="9" aria-label="Minimum"><span>V</span></div><span class="md-c3">–</span><div class="md-unit"><input class="md-input" value="36" aria-label="Maximum"><span>V</span></div></div></div>
+<div class="md-facet"><p class="md-overline">Lifecycle</p><label class="md-check"><input type="checkbox" checked>Active<span class="md-count">15</span></label><label class="md-check"><input type="checkbox">NRND<span class="md-count">3</span></label><label class="md-check"><input type="checkbox">End of life<span class="md-count">6</span></label></div>
+</aside>
+<div class="md-results">
+<div class="md-results-bar"><b>4 products</b><span class="md-c3" style="font-size:14px">of 24</span><span class="md-spacer"></span><button class="md-btn md-btn-secondary md-btn-s md-filters-btn" type="button"><svg class="md-i md-i-16" aria-hidden="true"><use href="#i-filter"/></svg>Filters · 3</button><select class="md-input md-select" style="width:auto;height:32px;font-size:14px" aria-label="Sort"><option>Sort: Part number</option><option>Sort: Channels</option></select></div>
+<div class="md-active-filters"><button class="md-chip-x" type="button">CAN FD<svg class="md-i md-i-16" aria-hidden="true"><use href="#i-x"/></svg></button><button class="md-chip-x" type="button">−40 to +85 °C<svg class="md-i md-i-16" aria-hidden="true"><use href="#i-x"/></svg></button><button class="md-chip-x" type="button">Active<svg class="md-i md-i-16" aria-hidden="true"><use href="#i-x"/></svg></button></div>
+<div class="md-table-wrap"><table class="md-table"><thead><tr><th><span class="md-vh">Compare</span></th><th></th><th>Part number</th><th class="num">CAN FD</th><th>Other buses</th><th>Supply</th><th>Upload</th><th>Lifecycle</th></tr></thead><tbody>
+<tr><td><label class="md-check"><input type="checkbox" aria-label="Compare GW-410"></label></td><td><span class="md-thumb"><svg viewBox="0 0 120 60"><use href="#thumb"/></svg></span></td><td><a class="md-pn" href="#r">GW-410</a></td><td class="num">4</td><td>2× LIN, ETH</td><td class="md-data">9–36 V</td><td>LTE Cat 4</td><td><span class="md-badge md-badge-active">Active</span></td></tr>
+<tr><td><label class="md-check"><input type="checkbox" checked aria-label="Compare LX-200"></label></td><td><span class="md-thumb"><svg viewBox="0 0 120 60"><use href="#thumb"/></svg></span></td><td><a class="md-pn" href="#r">LX-200</a></td><td class="num">2</td><td>1× LIN</td><td class="md-data">6–32 V</td><td>Wi-Fi</td><td><span class="md-badge md-badge-active">Active</span></td></tr>
+<tr><td><label class="md-check"><input type="checkbox" checked aria-label="Compare LX-400"></label></td><td><span class="md-thumb"><svg viewBox="0 0 120 60"><use href="#thumb"/></svg></span></td><td><a class="md-pn" href="#r">LX-400</a></td><td class="num">4</td><td>2× LIN</td><td class="md-data">6–32 V</td><td>—</td><td><span class="md-badge md-badge-active">Active</span></td></tr>
+<tr><td><label class="md-check"><input type="checkbox" aria-label="Compare IF-102"></label></td><td><span class="md-thumb"><svg viewBox="0 0 120 60"><use href="#thumb"/></svg></span></td><td><a class="md-pn" href="#r">IF-102</a></td><td class="num">2</td><td>—</td><td class="md-data">USB 5 V</td><td>—</td><td><span class="md-badge md-badge-active">Active</span></td></tr>
+</tbody></table></div>
+<div class="md-pager"><span>2 selected · <a class="md-link" href="#r">Compare</a></span><div class="md-pager-btns"><button type="button" aria-current="page">1</button><button type="button">2</button><button type="button">3</button></div></div>
+</div></div>
+</div>
+<script>Meridian.mount();</script>
+</body>
+</html>
